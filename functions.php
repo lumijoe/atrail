@@ -91,7 +91,7 @@ add_image_size('top', 1077, 622, true);
 add_image_size('contribution', 557, 280, true);
 
 // トップページの施工事例にて使用している画像用のサイズ設定
-add_image_size('front-contribution', 295, 295, true);
+add_image_size('front-contribution', 295, 295, false);
 
 // 企業情報・店舗情報一覧画像用のサイズ設定
 add_image_size('common', 465, 252, true);
