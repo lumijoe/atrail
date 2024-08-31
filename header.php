@@ -19,11 +19,12 @@
       <div class="header-inner">
         <div class="flexrowYcenter">
           <div class="logo">
-            <a class="logo-header" href="<?php echo esc_url(home_url()); ?>">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/common/logo.png" class="fixed-logo" alt="ATRAIL" />
-            </a>
+            <h1>
+              <a class="logo-header" href="<?php echo esc_url(home_url()); ?>">
+                <img src="https://atrail.co.jp/wp-content/uploads/images/logo-green@2x.png" class="fixed-logo" alt="ATRAIL" style="max-width:20%;">
+              </a>
+            </h1>
           </div>
-          <h1>アトレイル株式会社</h1>
         </div>
         <div style="display:flex; flex-direction: row;">
           <div>
@@ -31,7 +32,7 @@
             <p>受付時間 / 9:00～18:00（水曜定休）</p>
           </div>
           <button class="mail">
-            <img src="https://lkcodetest.sakura.ne.jp/atrail/wp-content/uploads/images/common/icon-mail.png" alt="" srcset="" style="width:80px; height:auto;">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/icon-mail.png" alt="" srcset="" style="width:80px; height:auto;">
           </button>
         </div>
       </div>
@@ -39,10 +40,11 @@
     <!-- front-page.phpの場合 -->
     <?php if (is_front_page()): ?>
       <section class="section-contents" id="keyvisual">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/bg-page-dummy.png" alt="">
+        <img src="https://atrail.co.jp/wp-content/uploads/images/bg-section-keyvisual-02.jpg" alt="">
         <div class="wrapper">
-          <h1 class="site-title">Your Style</h1>
-          <p class="site-caption">(ダミー)自由な発想の建物で<br>暮らしに自由を</p>
+          <!-- <h1 class="site-title">your style</h1> -->
+          <h1 class="site-caption">コンテナで、かなえる。<br>自由を、つくる。</h1>
+          <img src="https://atrail.co.jp/wp-content/uploads/images/logo-white@2x.png" alt="" srcset="" class="logo-img">
         </div>
       </section>
       <!-- front-page.php以外のphpページの場合 -->
@@ -52,7 +54,7 @@
           <main>
             <div class="page-contents">
               <div class="page-head">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/bg-page-dummy.png" alt="">
+                <?php echo get_main_image(); ?>
 
                 <div class="wrapper">
                   <span class="page-title-en"><?php echo get_main_en_title(); ?></span>
